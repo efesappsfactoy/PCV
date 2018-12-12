@@ -1,0 +1,28 @@
+{
+  "name": "fake",
+  "version": "1.0.0",
+  "description": "Fake del proyecto PCV.",
+  "main": "main.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "backend"
+  },
+  "keywords": [
+    "comida",
+    "centro",
+    "comercial",
+    "restaurante",
+    "pedido"
+  ],
+  "author": "Efrén Sandoval",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^10.12.11",
+    "inquirer": "^6.2.0",
+    "rxjs": "^6.3.3",
+    "typescript": "^3.2.1"
+  }
+}

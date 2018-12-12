@@ -1,0 +1,98 @@
+{
+  "usuarios": [
+    {
+      "idUsuario": 1,
+      "nombreUsuario": "efres",
+      "contrasenia": "1234"
+    },
+    {
+      "idUsuario": 2,
+      "nombreUsuario": "juli",
+      "contrasenia": "1234"
+    },
+    {
+      "idUsuario": 3,
+      "nombreUsuario": "joselito",
+      "contrasenia": "1234"
+    },
+    {
+      "idUsuario": 4,
+      "nombreUsuario": "magda21",
+      "contrasenia": "1234"
+    }
+  ],
+  "pedidos": [
+    {
+      "idPedido": 1,
+      "valorPedido": 12.00,
+      "numeroPedido": 1,
+      "estadoPedido": "procesado",
+      "idUsuario": 1,
+      "idOpcion": 1
+    },
+    {
+      "idPedido": 2,
+      "valorPedido": 6.99,
+      "numeroPedido": 2,
+      "estadoPedido": "en proceso",
+      "idUsuario": 2,
+      "idOpcion": 2
+    },
+    {
+      "idPedido": 3,
+      "valorPedido": 3.25,
+      "numeroPedido": 3,
+      "estadoPedido": "en proceso",
+      "idUsuario": 3,
+      "idOpcion": 3
+    },
+    {
+      "idPedido": 4,
+      "valorPedido": 18.55,
+      "numeroPedido": 4,
+      "estadoPedido": "esperando",
+      "idUsuario": 4,
+      "idOpcion": 4
+    }
+  ],
+  "menu": {
+    "opciones": [
+      {
+        "idOpcion": 1,
+        "nombreOpcion": "Combo1",
+        "urlImagenOpcion": "hamburguesa+papas+refresco.jpg",
+        "valorOpcion": 5.99
+      },
+      {
+        "idOpcion": 2,
+        "nombreOpcion": "Combo2",
+        "urlImagenOpcion": "trucha+papas+refresco.jpg",
+        "valorOpcion": 7.99
+      },
+      {
+        "idOpcion": 3,
+        "nombreOpcion": "Combo3",
+        "urlImagenOpcion": "parrillada_personal+papas_cocida+refresco.jpg",
+        "valorOpcion": 12.00
+      },
+      {
+        "idOpcion": 4,
+        "nombreOpcion": "Churrasco Montado",
+        "urlImagenOpcion": "churrasco_montado.jpg",
+        "valorOpcion": 4.99
+      },
+      {
+        "idOpcion": 5,
+        "nombreOpcion": "Locro Quiteño",
+        "urlImagenOpcion": "locro_quitenio.jpg",
+        "valorOpcion": 2.99
+      },
+      {
+        "idOpcion": 6,
+        "nombreOpcion": "Cecina de Cerdo",
+        "urlImagenOpcion": "cecina_cerdo.jpg",
+        "valorOpcion": 6.99
+      }
+    ]
+  }
+}
