@@ -1,5 +1,5 @@
 import { Module } from '@nestjs/common';
-import { RestauranteService } from './restaurante/restaurante.service';
+import { RestauranteService } from './restaurante.service';
 
 @Module({
   providers: [RestauranteService]
