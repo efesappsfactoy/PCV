@@ -187,7 +187,7 @@ function leerBDD() {
     });
 }
 function crearBDD() {
-    var contenidoInicialBDD = '{"usuarios":[], "pedidos":[], "menu":{"opciones":[]}}';
+    var contenidoInicialBDD = '{"usuario":[], "pedidos":[], "menu":{"opciones":[]}}';
     return new Promise(function (resolve, reject) {
         fs.writeFile('bdd.json', contenidoInicialBDD, function (err) {
             if (err) {
@@ -199,7 +199,7 @@ function crearBDD() {
             else {
                 resolve({
                     mensaje: 'BDD creada',
-                    bdd: JSON.parse('{"usuarios":[], "pedidos":[], "menu":{"opciones":[]}}')
+                    bdd: JSON.parse('{"usuario":[], "pedidos":[], "menu":{"opciones":[]}}')
                 });
             }
         });

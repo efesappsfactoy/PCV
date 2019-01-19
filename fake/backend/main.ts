@@ -248,7 +248,7 @@ function leerBDD(): Promise<RespuestaBDD> {
 }
 
 function crearBDD() {
-    const contenidoInicialBDD = '{"usuarios":[], "pedidos":[], "menu":{"opciones":[]}}';
+    const contenidoInicialBDD = '{"usuario":[], "pedidos":[], "menu":{"opciones":[]}}';
     return new Promise(
         (resolve, reject) => {
             fs.writeFile(
@@ -263,7 +263,7 @@ function crearBDD() {
                     } else {
                         resolve({
                             mensaje: 'BDD creada',
-                            bdd: JSON.parse('{"usuarios":[], "pedidos":[], "menu":{"opciones":[]}}')
+                            bdd: JSON.parse('{"usuario":[], "pedidos":[], "menu":{"opciones":[]}}')
                         });
                     }
 
