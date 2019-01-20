@@ -13,11 +13,11 @@ import { RestauranteModule } from './restaurante/restaurante.module';
         TypeOrmModule.forRoot(
             {
                 type: 'mysql',
-                host: 'localhost',
-                port: 32773,
-                database: 'PCV',
-                username: 'efren',
-                password: '87654321',
+                host: '192.168.99.100',
+                port: 32779,
+                database: 'PVC',
+                username: 'edison',
+                password: 'eddifer0707',
                 synchronize: true, //para nueva bd
                 dropSchema: false,
                 entities: []
