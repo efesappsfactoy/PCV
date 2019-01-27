@@ -10,18 +10,7 @@ import { RestauranteModule } from './restaurante/restaurante.module';
 
 @Module({
     imports: [
-        TypeOrmModule.forRoot(
-            {
-                type: 'mysql',
-                host: '192.168.99.100',
-                port: 32779,
-                database: 'PVC',
-                username: 'edison',
-                password: 'eddifer0707',
-                synchronize: true, //para nueva bd
-                dropSchema: false,
-                entities: []
-            }),
+        TypeOrmModule.forRoot(),
         LoginModule,
         UsuarioModule,
         PedidosModule,
