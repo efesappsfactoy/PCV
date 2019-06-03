@@ -1,5 +1,5 @@
 import {Column, Entity, ManyToOne, PrimaryGeneratedColumn} from 'typeorm';
-import {PedidoEntity} from '../pedidos/pedido.entity';
+import {PedidoEntity} from '../pedido/pedido.entity';
 import {OpcionMenuEntity} from '../opcion-menu/opcion-menu.entity';
 
 @Entity('detalle_pedido')

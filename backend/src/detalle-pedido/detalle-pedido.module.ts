@@ -1,4 +1,14 @@
-import { Module } from '@nestjs/common';
+import {Module} from '@nestjs/common';
+import {TypeOrmModule} from '@nestjs/typeorm';
+import {DetallePedidoEntity} from './detalle-pedido.entity';
 
-@Module({})
-export class DetallePedidoModule {}
+@Module({
+    imports: [
+        TypeOrmModule
+            .forFeature(
+                [DetallePedidoEntity]
+            )
+    ]
+})
+export class DetallePedidoModule {
+}

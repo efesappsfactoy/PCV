@@ -1,4 +1,14 @@
-import { Module } from '@nestjs/common';
+import {Module} from '@nestjs/common';
+import {TypeOrmModule} from '@nestjs/typeorm';
+import {OpcionMenuEntity} from './opcion-menu.entity';
 
-@Module({})
-export class OpcionMenuModule {}
+@Module({
+    imports: [
+        TypeOrmModule.forFeature(
+            [
+                OpcionMenuEntity
+            ])
+    ]
+})
+export class OpcionMenuModule {
+}

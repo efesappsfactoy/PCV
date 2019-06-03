@@ -13,7 +13,7 @@ const actividadesRestaurante = {
     choices: [
         'Ingresar una nueva opción al menú',
         'Eliminar opciones del menú',
-        'Listar los pedidos según su estado',
+        'Listar los pedido según su estado',
         'Cambiar el estado del pedido seleccionado'
     ]
 };
@@ -53,7 +53,7 @@ const cuestionarioListarPorEstadoPedido = [
     {
         type: 'input',
         name: 'estadoPedido',
-        message: 'Ingrese el estado que corresponda según que pedidos desea listar:'
+        message: 'Ingrese el estado que corresponda según que pedido desea listar:'
     }
 ];
 
@@ -248,7 +248,7 @@ function leerBDD(): Promise<RespuestaBDD> {
 }
 
 function crearBDD() {
-    const contenidoInicialBDD = '{"usuario":[], "pedidos":[], "menu":{"opciones":[]}}';
+    const contenidoInicialBDD = '{"usuario":[], "pedido":[], "menu":{"opciones":[]}}';
     return new Promise(
         (resolve, reject) => {
             fs.writeFile(
@@ -263,7 +263,7 @@ function crearBDD() {
                     } else {
                         resolve({
                             mensaje: 'BDD creada',
-                            bdd: JSON.parse('{"usuario":[], "pedidos":[], "menu":{"opciones":[]}}')
+                            bdd: JSON.parse('{"usuario":[], "pedido":[], "menu":{"opciones":[]}}')
                         });
                     }
 
